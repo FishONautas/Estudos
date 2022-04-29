@@ -1,0 +1,64 @@
+header{
+    color: white;
+}
+body{
+    padding-top: 120px ;
+    background-image: url(background.jpg);
+    background-size: 100%;
+    font: normal 12pt arial;
+    width: 500px;
+    text-align: center;
+    margin: auto;
+}
+input#adicionar{
+    margin-left:13px ;
+    width: 80px;
+    text-align: center;
+    height: 25px;
+}
+input#finalizar{
+    margin-right: 13px;
+    width: 80px;
+    text-align: center;
+    height: 25px;
+}
+input#remover{
+    margin-left: 4px;
+    margin-right: 4px;
+    width: 80px;
+    text-align: center;
+    height: 25px;
+}
+section{
+    background: #dddddd;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.507);
+}
+select#lista{
+    margin-top: 25px;
+    padding-right: 125px;
+    width : 256px;
+}
+h1{
+    text-shadow: 3px 3px black;
+}
+input#procurar{
+    width: 70px;
+    height: 24px;
+    text-align: center;
+    margin-left: 13px;
+}
+option{
+    width: 256px;
+}
+footer{
+font: italic 14pt arial;
+padding-top: 25px;
+color: white;
+font-style: italic;
+text-shadow: 1px 1px black;
+}
+input#numero{
+    margin-left: 10px;
+}

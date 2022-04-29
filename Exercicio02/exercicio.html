@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bem-vindo</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <header>
+        <h1>Descubra sua idade</h1>
+    </header>
+    <style type="text/css">
+        h1{
+	text-shadow: rgba(0, 0, 0, 0.534) 3px 3px 3px;
+	}
+    p#rodape{
+        text-shadow: rgba(0, 0, 0, 0.534) 3px 3px 3px;
+    }
+    </style>
+    <section>
+        <div>
+            <p>Ano de nascimento:
+                <input type="number" name="ano" id="ano">
+            </p>
+            <p>Sexo:
+                <input type="radio" name ="radsex" id="mas" checked>
+                <label for ="mas">Masculino</label>
+                <input type="radio" name ="radsex" id="fem">
+                <label for ="fem">Feminino</label>
+            </p>
+            <p>
+            <img src="ue.png" id='foto'>
+            </p>
+            <p>
+                <input type="button" id ='botao' value="Verificar" onclick="verificar()" onmouseenter="entrar()" onmouseout="sair()">
+            </p>
+        </div>
+        <div id="res">
+            Preencha os dados acima para ver o resultado
+        </div>
+    </section>
+</body>
+<footer>
+    <p id="rodape">&copy; Programa do João</p>
+</footer>
+<script src="script.js"></script>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos DOM</title>
+<style>
+    div#area {
+        background: yellowgreen; /*Backgroun da DIV*/
+        color: white; /*cor da div*/
+        height: 200px; /*altura */
+        width: 200px; /*largura*/
+        line-height: 200px; /*Altura da Linha*/
+        text-align: center; /*Posição do texto*/
+}
+</style>
+</head>
+<body>
+    <div id='area' onclick="clicar()" onmouseenter="entrar()" onmouseout="sair()"> 
+        Interaja...
+    </div>
+<script>
+  var area = window.document.getElementById('area') /*Sempre declarar objeto da função antes das funções*/  
+  function clicar() { //QUANDO A FUNÇÃO FOR ATIVADA, FAÇA//
+        area.innerText = 'Clicou!'
+        area.style.background = 'green'
+    } //FIM DAS AÇÕES DENTRO DA AÇÃO//
+    function entrar() {
+        area.innerText ='Entrou!'
+        area.style.background = 'red'
+    }
+    function sair() {
+        area.innerText = 'Saiu!'
+        area.style.background = 'Blue'
+    }
+
+</script>
+</body>
+</html>

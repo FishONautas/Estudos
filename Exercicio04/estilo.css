@@ -1,0 +1,37 @@
+header{
+    padding-top: 40px;
+    color: white
+    
+}
+body{
+    padding-top: 75px;
+    background: rgb(129, 163, 255);
+    font: normal 15pt arial;
+    width: 500px;
+    text-align: center;
+    margin: auto;
+}
+input#numero{
+   padding: 5px;
+}
+input#botao{
+    font-size: 16px;
+    margin-left: 15px;
+    padding: 5px;
+    padding-right: 15px;
+    padding-left: 15px;
+    border-radius:  7px;
+    box-shadow: rgba(0, 0, 0, 0.473) 5px 5px 5px;
+}
+section{
+
+    background: rgb(255, 255, 255);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.473);
+
+}
+footer{
+ color: white;
+ font-style: italic;
+}

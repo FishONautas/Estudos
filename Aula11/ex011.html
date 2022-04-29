@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste de Nacionalidade</title>
+    <h1>Teste de Nacionalidade</h1>
+</head>
+<body>
+    Em qual país você mora <input type="text" id="pais">
+    <input type="button" value="Confirmar"  id="botao" onclick= "confirma()">
+    <div  id="res">Sua Nacionalidade</div>
+    <script>
+        function confirma() {
+        var pas = document.getElementById('pais')
+        var res = document.getElementById('res')
+        var caralho = String (pas.value)
+        res.innerHTML = `Você nasceu no ${caralho}`
+        if (caralho == "Brasil" || caralho == "brasil") {
+            res.innerHTML+= ' Você é brasileiro'
+        }
+        else{
+            res.innerHTML+= ' Você é estrangeiro'
+        }
+    }
+</script>
+</body>
+</html>

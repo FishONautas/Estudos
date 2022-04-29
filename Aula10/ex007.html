@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="titulo">Somando números</title>
+    <style>
+        h1{
+            color: indigo;
+        }
+        body{
+        font: normal 16pt Arial;
+        }
+        input{
+            font: normal 18pt Arial;
+            width: 100px;
+        }
+        div#resultado {
+            margin-top: 20px;
+            font: bold 18pt Arial;
+        }
+    </style>
+</head>
+<body>
+    <h1> Somando Valores</h1>
+    <input type="number" name="n1" id="n1"> + <!--Name pode ser igual o ID-->
+    <input type="number" name="n2" id="n2">
+    <input type="button" value="Somar" onclick="somar()">
+    <div id ='resultado'>Resultado</div>
+</body>
+    <script>
+        function somar() {
+            var n1 = window.document.getElementById('n1') //como o valor da variavel é definida pelo usuario é necessario converte-lá em number para fazer soma ao inves de concatenação//
+            var n2 = window.document.getElementById('n2')
+            var resultado = window.document.getElementById('resultado')
+            var numero1 = Number (n1.value)//convertendo para number//
+            var numero2 = Number (n2.value)
+            var soma = numero1 + numero2 //agora com valores number ele somara inves de concatenar//
+            resultado.innerHTML = `A soma entre ${numero1} e ${numero2} é igual a <strong>${soma}</strong>`
+        }
+    </script>
+</html>

@@ -1,0 +1,25 @@
+header{
+    color: white
+}
+body{
+    padding-top: 70px ;
+    background: rgb(160, 160, 160);
+    font: normal 15pt arial;
+    width: 500px;
+    text-align: center;
+    margin: auto;
+}
+section{
+    background: rgb(255, 255, 255);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.473);
+
+}
+footer{
+ color: white;
+ font-style: italic;
+}
+div#foto{
+    padding: 20px;
+}

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: #2d8fff;
+            color: white;
+            font: normal 15pt arial;
+        }
+    </style>
+</head>
+<body>
+    <h1>Iniciando estudos com DOM</h1>
+    <p>Aqui vai o <strong>resultado</strong></p>
+    <p>Aprendendo usar o <strong>DOM</strong></p>
+    <div id="msg">Clique em mim</div> <!--atribuindo um ID para a tag para sua localização no script, é possivel atribuir class-->
+    <script>
+        //Window.Document é uma forma de localizar o objeto desejado através da arvore DOM//
+        var p1 = window.document.getElementsByTagName('p')[0] //Transformando tag em variavel, declarando e editando dentro dos script//
+        window.document.write ('Esta escrito assim: '+ p1.innerHTML) //innerTEXT busca apenas a string, innerHTML puxa a string e suas configs//
+        p1.style.color = 'red' //p1, agora declarada pode ser editada no javascript//
+        var divisao = window.document.getElementById('msg') //Localizando tag pelo ID//
+        divisao.style.background = 'green' //Editando o ID//
+        divisao.innerHTML = 'Olá!' //Apagando ela volta a ser apenas DIV//
+        var divisao = window.document.querySelector('div#msg') //Localizando por outro metodo, # reprenseta ID e . representa Class//
+    </script>
+</body>
+</html>
